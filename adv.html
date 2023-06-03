@@ -1,0 +1,41 @@
+{% include 'header.njk' %}
+
+<section class="mainBanner">
+    <h1 class='container'>Реклама</h1>
+    <div class='back'>
+</section>
+<main>
+    <section class="content">
+        <h4>По вопросам и для рекламы</h4>
+        <p>Если у вас есть какие-либо вопросы или предложения, пожалуйста, используйте форму нашего сайта для связи с
+            нами. Мы всегда готовы помочь вам в любых вопросах и постараемся ответить на ваше сообщение как можно
+            быстрее!</p>
+        <p>Кроме того, если вы заинтересованы в размещении рекламы на нашем сайте, пожалуйста, также воспользуйтесь
+            формой обратной связи. Мы с радостью предоставим вам всю необходимую информацию и поможем выбрать наиболее
+            подходящий вариант для ваших потребностей. Спасибо!
+        </p>
+
+        <form id='form' method="post">
+            <div class="wrapperForm">
+                <input name="name" class="input inputText" type="text" placeholder="Имя">
+                <input name="email" class="input inputText" type="text" placeholder="Контактный email">
+                <input name="theme" class="input inputText" type="text" placeholder="Тема">
+
+                <textarea name="message" class="input inputTextarea" type="text" placeholder="Описание"></textarea>
+
+                <input class="input buttonForm" type="submit" value="Отправить">
+            </div>
+        </form>
+
+    </section>
+    <section class="banner"><img src="./src/img/banner.png" alt="Скулбокс">
+    </section>
+
+
+
+
+
+</main>
+
+
+{% include 'footer.njk'%}

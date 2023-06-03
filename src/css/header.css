@@ -1,0 +1,24 @@
+header {
+	height: 72px;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 800;
+	white-space: nowrap;
+}
+
+.logoLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logoLink:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+}
+

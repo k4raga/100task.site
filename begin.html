@@ -1,0 +1,21 @@
+{% include 'header.njk' %}
+
+<section class="mainBanner">
+    <h1 class='container'>Begin</h1>
+    <div class='back'>
+</section>
+<main>
+    <div class="tasksWrapper">
+        {% for task in collections.task %}
+        <div class="tasksWrapper">
+            <h2>{{ task.data.title }}</h2>
+            <p>{{ task.content }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <section class="banner"><img src="../src/img/banner.png" alt="Скулбокс">
+    </section>
+</main>
+
+
+{% include 'footer.njk'%}

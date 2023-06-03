@@ -1,0 +1,16 @@
+{
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1"
+	},
+	"scripts": {
+		"start": "eleventy --serve --quiet --watch",
+		"dev": "gulp --Del"
+	},
+	"dependencies": {
+		"markdown-it-attrs": "^4.1.6"
+	}
+}

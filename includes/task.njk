@@ -1,0 +1,22 @@
+
+{% include 'header.njk'%}
+{% set previousPost = collections.task | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.task | getNextCollectionItem(page) %}
+  <section class="mainBanner}">
+    <h1 class='container'>{{title}}</h1>
+    <div class='back'>
+</section>
+    <section class="content container">
+ <div class='content__wrap'>
+    {{ content | safe}}
+    </div>
+    <section class="content container">
+        <div class="buttons">
+        {% if previousPost %} <a class="buttonLink" href="{{ previousPost.url }}"><div class="prevPage button"> Предыдущая задача</div></a>{% endif %}
+        {% if nextPost %} <a class="buttonLink" href="{{nextPost.url }}"><div class="nextPage button">Следущая задача</div></a>{% endif %}
+        </div>
+        </section>
+    <section class="banner"><img src="../../../src/img/banner.png" alt="Скулбокс">
+    </section>
+    </section>
+{% include 'footer.njk'%}
